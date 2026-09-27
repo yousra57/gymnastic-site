@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {     /* Définition des variables CSS pour les couleurs principales et secondaires */
+  --primary-color: #334456;
+  --primary-color-dark: #141420;
+  --secondary-color: #ff97ba;
+  --white: #ffffff;
+}
+
+* {     /* Style global pour tous les éléments */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {     /* Style pour les liens */
+    text-decoration: none;      /* Supprime le soulignement par défaut des liens */
+}
+
+body {      
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+  /*font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; */
+}
+
+.header__container {    /* Style pour le conteneur de l'en-tête */
+    position: relative;
+    max-width: 120%;
+    margin: auto;
+    padding: 1rem;
+}
+
+nav {       /* Style pour la barre de navigation en haut de la page */
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo a {      /* Style pour le logo de navigation */
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.nav__links {   /* Style pour la liste de navigation */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color-dark);
+}
+
+.link a::after {    /* Style pour l'effet de soulignement animé sur les liens */
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+}
