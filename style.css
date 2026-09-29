@@ -56,12 +56,12 @@ nav {       /* Style pour la barre de navigation en haut de la page */
 .link a {
     position: relative;
     padding-bottom: 5px;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
     color: var(--primary-color-dark);
 }
 
-.link a::after {    /* Style pour l'effet de soulignement animé sur les liens */
+.link a::after {    /* Style pour l'effet de soulignement animé sur les liens (accueil, explorer...) */
     content: "";
     position: absolute;
     width: 0;
@@ -70,4 +70,8 @@ nav {       /* Style pour la barre de navigation en haut de la page */
     left: 0;
     background-color: var(--secondary-color);
     transition: 0.3s;
+}
+
+.link a:hover::after{
+    width: 100%;
 }
