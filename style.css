@@ -75,3 +75,79 @@ nav {       /* Style pour la barre de navigation en haut de la page */
 .link a:hover::after{
     width: 100%;
 }
+
+.header__content{
+    padding: 5rem 0;
+}
+
+h1{         /* style du titre h1*/
+    font-size: 7rem;
+    font-weight: 700;
+    color: var(--primary-color-dark);
+}
+
+h2{         /* style du titre h2 */
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primary-color-dark);
+}
+
+.banner__1 {        /* style du petit texte en dessous des titres */
+    max-width: 400px;
+    margin-left: 5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color-dark);
+    background-color: var(--white);
+}
+
+.btn{                  /* mise en forme du bouton */
+    display: inline-block;
+    padding: 1rem 3rem;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.header__image{     /* style de l'image de la femme */
+    position: absolute;
+    height: 100%;
+    width:  80%;
+    top:0;
+    left: calc(60% - 5rem);
+    padding-top: 6rem;
+    background-color: var(--white);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.header__image img{
+    width: 100%;
+    display: flex;
+    max-width: 600px;
+}
+
+.header__social-media {     /* mise en forme des icone insta, facebook, twitter*/
+    right: 0;
+    top: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header__socials span a{
+    font-size: 2rem;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.header__social-media span:hover a {
+    color: var(--secondary-color);
+}
